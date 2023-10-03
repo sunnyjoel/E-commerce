@@ -1,0 +1,106 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shopping Cart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #FF9950;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            background-color: #fff;
+        }
+
+        .cart-item span {
+            flex: 1;
+        }
+
+        .cart-item input {
+            width: 50px;
+        }
+
+        .cart-total {
+            font-weight: bold;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #FF9950;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Products Cart</h1>
+    </div>
+    
+    <div class="container">
+        <ul>
+            <li><a href="products.html">Continue Shopping</a></li>
+        </ul>
+        
+        <div>
+            <h2>Cart</h2>
+            <div id="cart">
+                
+            </div>
+            <p class="cart-total">Total: $<span id="total">0.00</span></p>
+        </div>
+    </div>
+
+    <script>
+        //  JavaScript to load cart data from storage or a server here.
+
+        document.getElementById("cart").innerHTML = "<p>Your cart is empty.</p>";
+    </script>
+</body>
+</html>
+
